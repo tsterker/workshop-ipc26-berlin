@@ -10,7 +10,8 @@
         "phpstan/phpstan": "^1.9",
         "phpstan/phpstan-phpunit": "^1.3",
         "symplify/easy-coding-standard": "^11.1",
-        "symplify/phpstan-extensions": "^11.1"
+        "symplify/phpstan-extensions": "^11.1",
+        "spatie/phpunit-watcher": "^1.23"
     },
     "autoload": {
         "psr-4": {
@@ -24,6 +25,7 @@
     },
     "scripts": {
         "test": "phpunit",
+        "test:watch": "phpunit-watcher watch",
         "test-coverage": "phpunit --coverage-html build/coverage",
         "check-cs": "ecs check --ansi",
         "fix-cs": "ecs check --fix --ansi",

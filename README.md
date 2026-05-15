@@ -22,12 +22,12 @@ Through pair programming, you experience:
 Four independent katas. Each lives in its own folder with its own
 `composer.json`, `Dockerfile`, and `docker-compose.yml`—pick any and start.
 
-| # | Kata | Track | Focus |
-|---|---|---|---|
-| 1 | [Rock Paper Scissors](tdd/rock-paper-scissors/README.md) | TDD | Parameterized tests, clear rules |
-| 2 | [Guess the Random Number](tdd/guess-random-number/README.md) | TDD | Mocking randomness, isolating I/O |
-| 3 | [Parrot](refactoring/parrot/README.md) | Refactoring | Polymorphism, removing smells |
-| 4 | [Tennis](refactoring/tennis/README.md) | Refactoring | Taming conditionals, naming |
+| # | Kata | Track | Focus | Time |
+|---|---|---|---|---|
+| 1 | [Rock Paper Scissors](tdd/rock-paper-scissors/README.md) | TDD | Parameterized tests, clear rules | 30–45 min |
+| 2 | [Guess the Random Number](tdd/guess-random-number/README.md) | TDD | Mocking randomness, isolating I/O | 45–60 min |
+| 3 | [Parrot](refactoring/parrot/README.md) | Refactoring | Polymorphism, removing smells | 30–45 min |
+| 4 | [Tennis](refactoring/tennis/README.md) | Refactoring | Taming conditionals, naming | 45–60 min |
 
 ---
 
@@ -38,10 +38,22 @@ Four independent katas. Each lives in its own folder with its own
 No local PHP needed. Requires Docker running.
 
 ```bash
+make up                           # start all 4 kata containers at once
+make test                         # run all tests
+make down                         # stop all containers
+```
+
+Or work on a single kata:
+
+```bash
 cd tdd/rock-paper-scissors        # or any other kata
-docker-compose up -d              # build + install deps + keep container alive
-docker-compose exec <service> composer test
-docker-compose down               # stop when done
+make up                           # build + install deps + keep container alive
+make test                         # run tests
+make watch                        # run tests on every file save (TDD flow)
+make stan                         # static analysis
+make cs                           # check coding standards
+make fix-cs                       # fix coding standards
+make down                         # stop when done
 ```
 
 Service names: `rock-paper-scissors-tdd`, `guess-number-tdd`,

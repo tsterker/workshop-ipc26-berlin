@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
-SERVICE = guess-number-tdd
-CONTAINER = ipc26-guess-number
+SERVICE = tennis-refactoring
+CONTAINER = ipc26-tennis
 
 help: ## Show this help message.
 	@echo 'usage: make [target]'
