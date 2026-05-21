@@ -1,6 +1,6 @@
 # Hands-On Refactoring Workshop: Modernizing Legacy PHP with Pair Programming
 
-Transform messy legacy PHP into clean, maintainable software—without breaking
+Transform messy legacy PHP into clean, maintainable software, without breaking
 existing behavior.
 
 We start with simple refactoring exercises and progress to advanced
@@ -20,7 +20,7 @@ Through pair programming, you experience:
 ## Katas
 
 Four independent katas. Each lives in its own folder with its own
-`composer.json`, `Dockerfile`, and `docker-compose.yml`—pick any and start.
+`composer.json`, `Dockerfile`, and `docker-compose.yml`. Pick any and start.
 
 | # | Kata | Track | Focus | Time |
 |---|---|---|---|---|
@@ -32,6 +32,9 @@ Four independent katas. Each lives in its own folder with its own
 ---
 
 ## Setup
+
+> **Attending the workshop?** Read [SETUP.md](SETUP.md) first. A 10-minute
+> pre-workshop checklist to verify your machine before the day.
 
 ### Option 1: Docker (recommended)
 
@@ -89,11 +92,11 @@ docker rm -f ipc26-parrot ipc26-tennis ipc26-rps ipc26-guess-number
 
 ### Books
 
-- **Test-Driven Development by Example** — Kent Beck
+- **Test-Driven Development by Example** by Kent Beck
   ([Amazon](https://www.amazon.de/-/en/Kent-Beck/dp/0321146530/))
-- **Refactoring** — Martin Fowler
+- **Refactoring** by Martin Fowler
   ([Amazon](https://www.amazon.de/-/en/Martin-Fowler/dp/0134757599/))
-- **Working Effectively with Legacy Code** — Michael C. Feathers
+- **Working Effectively with Legacy Code** by Michael C. Feathers
   ([Amazon](https://www.amazon.de/-/en/Michael-C-Feathers/dp/0131177052/))
 
 ### Videos
